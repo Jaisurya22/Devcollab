@@ -7,14 +7,13 @@ const tasks = [
   { id: 5, title: "Update README", priority: "low", status: "done" }
 ]
 
+tasks.forEach(function(task) {
+    console.log(task.title)
+})
+
 function showall(){
     console.log("==All tasks ==")
-    {
-        tasks.forEach( tasks => console.log(`ID: ${tasks.id}, Title: ${tasks.title}, Priority: ${tasks.priority}, Status: ${tasks.status}`)
-        
-        
-        
-        )
-        
-    }
+    tasks.forEach(task => console.log(`ID: ${task.id}, Title: ${task.title}, Priority: ${task.priority}, Status: ${task.status}`))
 }
+
+showall()
